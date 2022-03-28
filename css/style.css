@@ -27,7 +27,9 @@
      height: 100%;
      font-family: 'Inter';
  }
-
+ .page{
+    position: relative;
+ }
 .header{
     background-color: #20ABA6;
     height: 8vh;
@@ -55,7 +57,6 @@
     line-height: 1.5;
     border-radius: 0.25rem;
     color: #ffffff;
-
 }
 
 main{
@@ -146,7 +147,6 @@ main{
     font-weight: 300;    
 }
 .addbtn{
-    background-color: #6BBF8D;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -191,6 +191,52 @@ main{
   border-radius: 1rem;
 }
 
+.addEmp{
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display:none;
+    grid-template-columns: 1fr;
+    padding:1rem;
+    background: #F3E0CD;
+    border-radius: 13px;
+    width: 23rem;
+    height: 30rem;
+    z-index:5;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, 
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, 
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.addPhoto{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:8rem;
+}
+.inputs{
+    width:12.5rem;
+}
+.userDat{
+    position: absolute;
+    display:none;
+    padding: 1rem;
+    margin-right:1rem;
+    right:0;
+    background: #F3E0CD;
+    border-radius: 13px;
+    width: 16rem;
+    height: 14rem;
+    z-index:5;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, 
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, 
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+
 
 @media screen and (max-width: 768px) {
   
@@ -206,6 +252,7 @@ main{
       margin-top:1rem;
     }
     .bigusercard{
+        position:relative;
         margin-top: 2rem;
         background: #F3E0CD;
         box-shadow: 4px 4px 4px 0.5px rgba(0, 0, 0, 0.08);
@@ -233,5 +280,9 @@ main{
         font-size:0.57rem;
         font-weight: 400;
     }
+    .userDat{
+      margin-right:0rem;
+    }
+  
  
 }
