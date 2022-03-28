@@ -78,7 +78,7 @@ main{
     grid-template-rows: 30vh 55vh;
 }
 .usercard{
-    background: #F3E0CD;
+    background: #ffd504;
     box-shadow: 4px 4px 4px 0.5px rgba(0, 0, 0, 0.08);
     border-radius: 4px;
     display: grid;
@@ -86,7 +86,7 @@ main{
     padding: 0.8rem 1rem;
 }
 .bigusercard{
-    background: #F3E0CD;
+    background: #ffd504;
     box-shadow: 4px 4px 4px 0.5px rgba(0, 0, 0, 0.08);
     border-radius: 4px;
     display: grid;
@@ -166,7 +166,7 @@ main{
     row-gap: 0.8rem;
 }
 .slide .usercard{
-    background: #E1BE9D;
+    background: #F7DB4F;
     width: 90%;
     justify-self: center;
 }
@@ -201,7 +201,7 @@ main{
     display:none;
     grid-template-columns: 1fr;
     padding:1rem;
-    background: #F3E0CD;
+    background: #ffd504;
     border-radius: 13px;
     width: 23rem;
     height: 30rem;
@@ -226,7 +226,7 @@ main{
     padding: 1rem;
     margin-right:1rem;
     right:0;
-    background: #F3E0CD;
+    background: #ffd504;
     border-radius: 13px;
     width: 16rem;
     height: 14rem;
@@ -254,7 +254,7 @@ main{
     .bigusercard{
         position:relative;
         margin-top: 2rem;
-        background: #F3E0CD;
+        background: #ffd504;
         box-shadow: 4px 4px 4px 0.5px rgba(0, 0, 0, 0.08);
         border-radius: 4px;
         display: grid;
