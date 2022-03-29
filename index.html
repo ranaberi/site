@@ -8,8 +8,9 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>Project</title>
 </head>
+
 <body>
-  <div class="page">
+    <div class="page">
         <div class="addEmp">
             <div class="flex justify-end">
                 <button><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -46,7 +47,6 @@
                 <button class="logout">Logout</button>
             </div>
         </div>
-
         <main>
             <div class="leftpanel">
                 <div class="usercard">
@@ -130,7 +130,6 @@
                     <button class="addbtn bg-green-600 text-white">Add Employee</button>
                 </div>
             </div>
-
             <div class="rightpanel">
                 <div class="bigusercard">
                     <div class="userDat flex-col space-y-4">
@@ -174,71 +173,167 @@
                                 <p>kristin.benli@uskudar.edu.tr</p>
                     </div>
                 </div>
-                <div class="table-grid">
-                    <div class="font-bold">Hours</div>
-                    <div class="font-bold">Monday</div>
-                    <div class="font-bold">Tuesday</div>
-                    <div class="font-bold">Wednesday</div>
-                    <div class="font-bold">Thursday</div>
-                    <div class="font-bold">Friday</div>
-                    <div class="font-bold">8:40-9:40</div>
-                    <div>Quas!</div>
-                    <div>Enim!</div>
-                    <div>Recusandae?</div>
-                    <div>Esse.</div>
-                    <div>Aut.</div>
-                    <div class="font-bold">9:40 - 10:40</div>
-                    <div>Autem?</div>
-                    <div>Eos.</div>
-                    <div>Odit.</div>
-                    <div>Debitis.</div>
-                    <div>Laudantium.</div>
-                    <div class="font-bold">10:40-11:40</div>
-                    <div>Ipsa!</div>
-                    <div>Sed?</div>
-                    <div>In.</div>
-                    <div>Tempore.</div>
-                    <div>Eos!</div>
-                    <div class="font-bold">11:40-12:40</div>
-                    <div>Voluptas.</div>
-                    <div>In.</div>
-                    <div>Incidunt!</div>
-                    <div>Odio?</div>
-                    <div>Commodi.</div>
-                    <div class="font-bold">12:40-13:40</div>
-                    <div>Tenetur</div>
-                    <div>Velit.</div>
-                    <div>Quos.</div>
-                    <div>Est.</div>
-                    <div>Quo?</div>
-                    <div class="font-bold">13:40-14:40</div>
-                    <div>Maiores.</div>
-                    <div>Nemo.</div>
-                    <div>Provident!</div>
-                    <div>Quas!</div>
-                    <div>Quisquam!</div>
-                    <div class="font-bold">14:40-15:40</div>
-                    <div>Debitis!</div>
-                    <div>Sed.</div>
-                    <div>Nemo?</div>
-                    <div>Sed?</div>
-                    <div>Corporis.</div>
-                    <div class="font-bold">15:40-16:40</div>
-                    <div>Ipsa.</div>
-                    <div>Aspernatur.</div>
-                    <div>Eligendi.</div>
-                    <div>Vero.</div>
-                    <div>Qui.</div>
-                    <div class="font-bold">16:40-17:40</div>
-                    <div>Mollitia.</div>
-                    <div>Nesciunt.</div>
-                    <div>Ab!</div>
-                    <div>Odit!</div>
-                    <div>Dolor!</div>
+
+                <div class="tablebox">
+                    <div class="delBox px-3">
+
+                    <div class="closeIt my-1"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        aria-hidden="true" role="img" class=" iconify iconify--ic" width="24" height="24"
+                        preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41z">
+                        </path>
+                    </svg></div>
+
+                    <small class="text-center font-bold my-2">Are you sure you want to delete the selected courses?</small>
+                     <button class="btn btn-red w-32 py-2 my-2 delconf">Delete</button>
+                    </div>
+                       
+                    <div class="editor p-2">
+
+                        <div class="closeEdit px-2"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            aria-hidden="true" role="img" class=" iconify iconify--ic" width="24" height="24"
+                            preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41z">
+                            </path>
+                        </svg></div>
+    
+                        <input class="my-1 px-2 rounded-m" placeholder="Course Example" type="text">
+                        <input class="my-1 px-2 rounded-m" placeholder="semester 1" type="text">
+                        <input class="my-1 px-2 rounded-m" placeholder="Monday" type="text">
+                        <input class="my-1 px-2 rounded-m" placeholder="start time" type="text">
+                        <input class="my-1 px-2 rounded-m" placeholder="end time" type="text">
+
+                         <button class="btn btn-red w-32 mt-2">Delete</button>
+                    </div>
+
+                    <div class="cursAdd p-1">
+
+                        <div class="closeAdd px-2"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            aria-hidden="true" role="img" class=" iconify iconify--ic" width="24" height="24"
+                            preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41z">
+                            </path>
+                        </svg></div>
+    
+                        <input class="my-1 px-2 rounded-md " placeholder="Course Example" type="text">
+                        <input class="my-1 px-2 rounded-md " placeholder="Semester 1" type="text">
+                        <input class="my-1 px-2 rounded-md " placeholder="Monday" type="text">
+                        <input class="my-1 px-2 rounded-md " placeholder="start time" type="text">
+                        <input class="my-1 px-2 rounded-md " placeholder="end time" type="text">
+
+                         <button class="btn btn-green w-32 mt-5">Add</button>
+                    </div>
+                    <div class="table-grid">
+                        <div class="font-bold">Hours</div>
+                        <div class="font-bold">Monday</div>
+                        <div class="font-bold">Tuesday</div>
+                        <div class="font-bold">Wednesday</div>
+                        <div class="font-bold">Thursday</div>
+                        <div class="font-bold">Friday</div>
+                        <div class="font-bold">8:40-9:40</div>
+                        <div>Quas!</div>
+                        <div>Enim!</div>
+                        <div>Recusandae?</div>
+                        <div>Esse.</div>
+                        <div>Aut.</div>
+                        <div class="font-bold">9:40 - 10:40</div>
+                        <div>Autem?</div>
+                        <div>Eos.</div>
+                        <div>Odit.</div>
+                        <div>Debitis.</div>
+                        <div>Laudantium.</div>
+                        <div class="font-bold">10:40-11:40</div>
+                        <div>Ipsa!</div>
+                        <div>Sed?</div>
+                        <div>In.</div>
+                        <div>Tempore.</div>
+                        <div>Eos!</div>
+                        <div class="font-bold">11:40-12:40</div>
+                        <div>Voluptas.</div>
+                        <div>In.</div>
+                        <div>Incidunt!</div>
+                        <div>Odio?</div>
+                        <div>Commodi.</div>
+                        <div class="font-bold">12:40-13:40</div>
+                        <div>Tenetur</div>
+                        <div>Velit.</div>
+                        <div>Quos.</div>
+                        <div>Est.</div>
+                        <div>Quo?</div>
+                        <div class="font-bold">13:40-14:40</div>
+                        <div>Maiores.</div>
+                        <div>Nemo.</div>
+                        <div>Provident!</div>
+                        <div>Quas!</div>
+                        <div>Quisquam!</div>
+                        <div class="font-bold">14:40-15:40</div>
+                        <div>Debitis!</div>
+                        <div>Sed.</div>
+                        <div>Nemo?</div>
+                        <div>Sed?</div>
+                        <div>Corporis.</div>
+                        <div class="font-bold">15:40-16:40</div>
+                        <div>Ipsa.</div>
+                        <div>Aspernatur.</div>
+                        <div>Eligendi.</div>
+                        <div>Vero.</div>
+                        <div>Qui.</div>
+                        <div class="font-bold">16:40-17:40</div>
+                        <div>Mollitia.</div>
+                        <div>Nesciunt.</div>
+                        <div>Ab!</div>
+                        <div>Odit!</div>
+                        <div>Dolor!</div>
+                    </div>
+                    <div class="fixpan px-2">
+
+                        <div class="px-1 tabAdd"><svg xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img"
+                                class="text-green-700 iconify iconify--ic" width="24" height="24"
+                                preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="M12 7c-.55 0-1 .45-1 1v3H8c-.55 0-1 .45-1 1s.45 1 1 1h3v3c0 .55.45 1 1 1s1-.45 1-1v-3h3c.55 0 1-.45 1-1s-.45-1-1-1h-3V8c0-.55-.45-1-1-1zm0-5C6.48 2 2 6.48 2 12s4.48 10 10 10s10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8s8 3.59 8 8s-3.59 8-8 8z">
+                                </path>
+                            </svg></div>
+                        <div class="px-1 tabFix"><svg xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img"
+                                class="changeData iconify iconify--ic" width="24" height="24"
+                                preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="m15 16l-4 4h8c1.1 0 2-.9 2-2s-.9-2-2-2h-4zm-2.94-8.81l-8.77 8.77c-.18.18-.29.44-.29.7V19c0 .55.45 1 1 1h2.34c.27 0 .52-.11.71-.29l8.77-8.77l-3.76-3.75zm6.65.85a.996.996 0 0 0 0-1.41l-2.34-2.34a.996.996 0 0 0-1.41 0l-1.83 1.83l3.75 3.75l1.83-1.83z">
+                                </path>
+                            </svg></div>
+                        <div class="px-1 tabDel"><svg xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img"
+                                class="text-red-600 iconify iconify--ic" width="24" height="24"
+                                preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                                <path fill="currentColor" d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zm3.17-6.41a.996.996 0 1 1
+                 1.41-1.41L12 12.59l1.41-1.41a.996.996 0 1 1 1.41 1.41L13.41 
+                 14l1.41 1.41a.996.996 0 1 1-1.41 1.41L12 15.41l-1.41 
+                 1.41a.996.996 0 1 1-1.41-1.41L10.59 14l-1.42-1.41zM18 
+                 4h-2.5l-.71-.71c-.18-.18-.44-.29-.7-.29H9.91c-.26 
+                 0-.52.11-.7.29L8.5 4H6c-.55 0-1 .45-1 1s.45 1 1 
+        1h12c.55 0 1-.45 1-1s-.45-1-1-1z"></path>
+                            </svg></div>
+                        <div class="px-1 tabself"><svg xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img"
+                                class="iconify iconify--ic" width="24" height="24" preserveAspectRatio="xMidYMid meet"
+                                viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="M5 5h2v3h10V5h2v5h2V3h-6.18C14.4 1.84 13.3 1 12 1s-2.4.84-2.82 2H3v18h7v-2H5V5zm7-2c.55 0 1 .45 1 1s-.45 1-1 1s-1-.45-1-1s.45-1 1-1z">
+                                </path>
+                                <path fill="currentColor"
+                                    d="M20.3 18.9c.4-.7.7-1.5.7-2.4c0-2.5-2-4.5-4.5-4.5S12 14 12 16.5s2 4.5 4.5 4.5c.9 0 1.7-.3 2.4-.7l2.7 2.7l1.4-1.4l-2.7-2.7zm-3.8.1c-1.4 0-2.5-1.1-2.5-2.5s1.1-2.5 2.5-2.5s2.5 1.1 2.5 2.5s-1.1 2.5-2.5 2.5z">
+                                </path>
+                            </svg></div>
+                    </div>
                 </div>
             </div>
         </main>
- </div>
-<script src="./index.js"></script>
+    </div>
+    <script src="./index.js"></script>
 </body>
 </html>
